@@ -19,7 +19,7 @@
     
     <div class="container">
           <div class="border-light card mb-3">
-  <img src="{{ product.image.url }}" class="card-img-top img-fluid" alt="..." style="width:69.25rem; height:26.5rem; display:table-row-group;">
+  <img src={{ product.image }} class="card-img-top img-fluid" alt="..." style="width:69.25rem; height:26.5rem; display:table-row-group;">
   <div class="card-body">
     <h5 class="card-title"><b> {{ product.name }}</b> </h5>
             <blockquote class="blockquote text-justify"> <p class="mb-0">  {{ product.description|linebreaks }}</p></blockquote>
