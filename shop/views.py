@@ -26,7 +26,7 @@ def product_list(request, category_slug=None ,pk=None):
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
-    paginator = Paginator(products, 12)
+    paginator = Paginator(products, 30)
     page = request.GET.get('page')
 
     try:

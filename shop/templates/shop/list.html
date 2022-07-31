@@ -27,11 +27,11 @@
                 {% for product in products %}
                 
         <span class="separator">
-            <div class="row" style="width: 28rem; height:28rem; display:table-row-group;"  >
+            <div class="row" style="width: 18rem; height:20rem; display:table-row-group;"  >
                 
                 <div class="card  border-grey border-top-0 mb-3 shadow-sm" >
                     <a href="{{ product.get_absolute_re_path }}">
-                        <img src="{% if product.image %}{{ product.image }}{% else %}{% endif  %}" style="width: 20rem;">
+                        <img src="{% if product.image %}{{ product.image.url }}{% else %}{% endif  %}" style="width: 20rem;">
                     </a>
                     <hr/>
                     <div class="container">
@@ -76,7 +76,7 @@
      
       <footer class="container">
             <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; Martin Machua &middot; <a href="#">Privacy</a> Comparisonn <a href="#">Terms</a></p>
+            <p>&copy; Martin Machua &middot; <a href="#">Privacy</a> BesttechProducts <a href="#">Terms</a></p>
           </footer>   
     
 {% endblock body %}

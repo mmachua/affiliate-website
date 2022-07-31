@@ -19,7 +19,7 @@
     
     <div class="container">
           <div class="border-light card mb-3">
-  <img src={{ product.image }} class="card-img-top img-fluid" alt="..." style="width:69.25rem; height:26.5rem; display:table-row-group;">
+  <img src={{ product.image.url }} class="card-img-top img-fluid" alt="..." style="width:69.25rem; height:26.5rem; display:table-row-group;">
   <div class="card-body">
     <h5 class="card-title"><b> {{ product.name }}</b> </h5>
             <blockquote class="blockquote text-justify"> <p class="mb-0">  {{ product.description|linebreaks }}</p></blockquote>
@@ -28,15 +28,15 @@
                                       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                               <img src= {{ product.image2 }} class="card-img-top img-fluid rounded mx-auto d-block" alt="..." 
+                                               <img src= {{ product.image2.url }} class="card-img-top img-fluid rounded mx-auto d-block" alt="..." 
                                                style="width: 48.25rem;  display:table-row-group;">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src={{ product.image3 }} class="card-img-top img-fluid rounded mx-auto d-block" alt="..." 
+                                            <img src={{ product.image3.url }} class="card-img-top img-fluid rounded mx-auto d-block" alt="..." 
                                                style="width: 48.25rem;  display:table-row-group;">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src={{ product.image }} class="card-img-top img-fluid rounded mx-auto d-block" alt="..." 
+                                            <img src={{ product.image.url }} class="card-img-top img-fluid rounded mx-auto d-block" alt="..." 
                                                style="width: 48.25rem;  display:table-row-group;">
                                           </div>
                                         </div>

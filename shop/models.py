@@ -26,9 +26,9 @@ class Product(models.Model):
     name = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True)
 
-    image = models.URLField(max_length=350, blank=True)
-    image2 = models.URLField(max_length=350, blank=True)
-    image3 = models.URLField(max_length=350, blank=True)
+    image = models.ImageField(upload_to='productsaffiliatebesttech/%Y/%m/%d', blank=True)
+    image2 = models.ImageField(upload_to='productsaffiliatebesttech/%Y/%m/%d', blank=True)
+    image3 = models.ImageField(upload_to='productsaffiliatebesttech/%Y/%m/%d', blank=True)
 
     descriptiontitle =models.CharField(blank=True, max_length=70)
 

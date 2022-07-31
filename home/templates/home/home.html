@@ -18,24 +18,24 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={{ post.image }} class="d-block w-100" alt="..." style="
-                  height:34rem;">
+      <img src={{ post.image.url }} class="d-block w-100" alt="..." style="
+                  height:30rem;">
       <div class="carousel-caption d-none d-md-block">
         <h1 class = "display-4"><b>{{ post.post }}</b></h1>
         <p>{{ post.imagedescription }}</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={{ post.image1 }} class="d-block w-100" alt="..." style="
-                  height:34rem;">
+      <img src={{ post.image1.url }} class="d-block w-100" alt="..." style="
+                  height:30rem;">
       <div class="carousel-caption d-none d-md-block">
         <h1 class = "display-4">{{ post.post1 }}</h1>
         <p>{{ post.imagedescription1 }}</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={{ post.image2 }} class="d-block w-100" alt="..." style="
-                  height:34rem;">
+      <img src={{ post.image2.url }} class="d-block w-100" alt="..." style="
+                  height:30rem;">
       <div class="carousel-caption d-none d-md-block">
         <h1 class = "display-4">{{ post.post2 }}</h1>
         <p>{{ post.imagedescription2 }}</p>
@@ -71,7 +71,7 @@
 <div class="row row-cols-1 row-cols-md-2">
   <div class="col mb-4">
     <div class="card border-0 shadow p-3">
-      <img src={{ post.image1 }} class="card-img-top rounded-lg  border-white" alt="...">
+      <img src={{ post.image1.url }} class="card-img-top rounded-lg  border-white" alt="...">
       <div class="card-body">
         <h5 class="lead "><b>{{ post.post1 }}</b></h5>
         <p class="lead card-text">{{ post.imagedescription1 }}</p>
@@ -80,7 +80,7 @@
   </div>
   <div class="col mb-4">
     <div class="card border-0 shadow p-3">
-      <img src={{ post.image2 }} class="card-img-top rounded-lg border-white" alt="...">
+      <img src={{ post.image2.url }} class="card-img-top rounded-lg border-white" alt="...">
       <div class="card-body">
         <h5 class="lead card-title text-right"><b>{{ post.post2 }}</b></h5>
         <p class="lead card-text">{{ post.imagedescription2 }}</p>
@@ -128,7 +128,7 @@
         <br>
       </div>
       <div class="col-md-5">
-         <img src={{ homepage.image }} class="d-block w-100 shadow-sm" alt="..." style="
+         <img src={{ homepage.image.url }} class="d-block w-100 shadow-sm" alt="..." style="
                   height:33rem;">
        
 
@@ -149,7 +149,7 @@
         <br>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src={{ homepage.image1 }} class="d-block w-100 shadow-sm" alt="..." style="
+        <img src={{ homepage.image1.url }} class="d-block w-100 shadow-sm" alt="..." style="
                   height:33rem;">
       </div>
     </div>
@@ -178,7 +178,7 @@
      
       <footer class="container">
             <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; Martin Machua &middot; <a href="#">Privacy</a> Comparisonn <a href="#">Terms</a></p>
+            <p>&copy; Martin Machua &middot; <a href="#">Privacy</a> Besttechproducts <a href="#">Terms</a></p>
           </footer>   
     
 {% endblock body %} 

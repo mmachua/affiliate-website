@@ -140,3 +140,25 @@ LOGIN_REDIRECT_URL = '/'
 
 
 django_heroku.settings(locals())
+
+# klk
+from google.cloud import storage
+import google.auth as auth
+from google.oauth2 import service_account
+
+GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
+   os.path.join('credential.JSON')
+)
+
+DEFAULT_FILE_STORAGE = 'website.gcloud.GoogleCloudMediaFileStorage'#'django.core.files.storage.FileSystemStorage'
+GS_PROJECT_ID = 'boxwood-diagram-303506'
+GS_BUCKET_NAME = 'residentbucketheroku'
+MEDIA_ROOT = 'media/'
+UPLOAD_ROOT = 'media/uploads/'
+MEDIA_URL = 'https://storage.googleapis.com/{}/'.format(GS_BUCKET_NAME)
+
+
+if os.getcwd() == '/app':
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = True
+    DEBUG = False
