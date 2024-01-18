@@ -24,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-b069e=i2&jweo9*z!5cjnyad=#reh5^x_l!@#mu!#kciso7$#s'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["besttechproducts.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -150,9 +150,9 @@ GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
    os.path.join('credential.JSON')
 )
 
-DEFAULT_FILE_STORAGE = 'website.gcloud.GoogleCloudMediaFileStorage'#'django.core.files.storage.FileSystemStorage'
-GS_PROJECT_ID = 'boxwood-diagram-303506'
-GS_BUCKET_NAME = 'residentbucketheroku'
+DEFAULT_FILE_STORAGE = ''#'django.core.files.storage.FileSystemStorage'
+GS_PROJECT_ID = ''
+GS_BUCKET_NAME = ''
 MEDIA_ROOT = 'media/'
 UPLOAD_ROOT = 'media/uploads/'
 MEDIA_URL = 'https://storage.googleapis.com/{}/'.format(GS_BUCKET_NAME)
